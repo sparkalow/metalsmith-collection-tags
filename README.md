@@ -51,6 +51,11 @@ Hello World
       "blog": {
         "handle": "tags",
         "path": "blog/topics/:tag.html",
+        // layout to use for tag listing
+        "layout":"/partials/tag.hbt",
+        // Can also use `template` property for use with the (deprecated)
+        // metalsmith-templates plugin. The `template` property is deprecated here
+        // as well but still available for use.
         "template": "/partials/tag.hbt"
       }
     }
